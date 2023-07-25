@@ -1,0 +1,117 @@
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0 27px 0 31px;
+}
+
+.button {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.prev {
+  composes: button;
+  margin-right: 23px;
+}
+
+.play {
+  composes: button;
+  margin-right: 23px;
+  cursor: pointer;
+}
+
+.play__svg:hover {
+  fill: var(--hover-secondary);
+}
+
+.next {
+  composes: button;
+  margin-right: 28px;
+}
+
+.repeat {
+  composes: button;
+  margin-right: 24px;
+}
+
+.repeat__svg:hover {
+  fill: transparent;
+  stroke: var(--hover-secondary);
+  cursor: pointer;
+}
+
+.repeat__svg_active {
+  width: 18px;
+  height: 12px;
+  fill: transparent;
+  stroke: var(--hover-secondary);
+  cursor: pointer;
+}
+
+.shuffle {
+  composes: button;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.shuffle__svg:hover {
+  fill: var(--hover-secondary);
+  stroke: var(--hover-secondary);
+  cursor: pointer;
+}
+
+.shuffle__svg_active {
+  width: 19px;
+  height: 12px;
+  fill: var(--hover-secondary);
+  stroke: var(--hover-secondary);
+  cursor: pointer;
+}
+
+.prev__svg {
+  width: 15px;
+  height: 14px;
+  fill: var(--svg-primary);
+  stroke: var(--svg-primary);
+}
+
+.play__svg {
+  width: 22px;
+  height: 20px;
+  fill: var(--svg-primary);
+}
+
+.next__svg {
+  width: 15px;
+  height: 14px;
+  fill: var(--svg-primary);
+  stroke: var(--svg-primary);
+}
+
+.repeat__svg {
+  width: 18px;
+  height: 12px;
+  fill: var(--svg-secondary);
+  stroke: var(--svg-secondary);
+}
+
+.shuffle__svg {
+  width: 19px;
+  height: 12px;
+  fill: var(--svg-secondary);
+  stroke: var(--svg-secondary);
+}

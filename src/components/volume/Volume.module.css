@@ -1,0 +1,114 @@
+.volume {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 92px 0 0;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.image {
+  width: 13px;
+  height: 18px;
+  margin-right: 17px;
+}
+
+.svg {
+  width: 13px;
+  height: 18px;
+  fill: transparent;
+}
+
+.progress {
+  cursor: pointer;
+  width: 109px;
+}
+
+.progress__line {
+  width: 100%;
+}
+
+.progress__line {
+  color: var(--active-stroke);
+  --thumb-height: 12px;
+  --track-height: 1px;
+  --track-color: var(--volume-secondary);
+  --brightness-hover: 180%;
+  --brightness-down: 80%;
+  --clip-edges: 0.125em;
+}
+
+.progress__line {
+  position: relative;
+  background: #fff0;
+  overflow: hidden;
+}
+
+.progress__line,
+.progress__line::-webkit-slider-runnable-track,
+.progress__line::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  transition: all ease 100ms;
+  height: var(--thumb-height);
+}
+
+.progress__line::-webkit-slider-runnable-track,
+.progress__line::-webkit-slider-thumb {
+  position: relative;
+}
+
+.progress__line::-webkit-slider-thumb {
+  --thumb-radius: calc((var(--thumb-height) * 0.5) - 1px);
+  --clip-top: calc((var(--thumb-height) - var(--track-height)) * 0.5 - 0.5px);
+  --clip-bottom: calc(var(--thumb-height) - var(--clip-top));
+  --clip-further: calc(100% + 1px);
+  --box-fill: calc(-100vmax - var(--thumb-width, var(--thumb-height))) 0 0
+    100vmax currentColor;
+  width: 12px;
+  box-shadow: var(--box-fill);
+  border-radius: var(--thumb-width, var(--thumb-height));
+  border: 2px solid var(--volume-primary);
+  background: var(--background-primary);
+  filter: brightness(100%);
+  clip-path: polygon(
+    100% -1px,
+    var(--clip-edges) -1px,
+    0 var(--clip-top),
+    -100vmax var(--clip-top),
+    -100vmax var(--clip-bottom),
+    0 var(--clip-bottom),
+    var(--clip-edges) 100%,
+    var(--clip-further) var(--clip-further)
+  );
+}
+
+.progress__line:hover::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+.progress__line:active::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+.progress__line::-webkit-slider-runnable-track {
+  background: linear-gradient(var(--track-color) 0 0) scroll no-repeat center /
+    100% calc(var(--track-height) + 1px);
+}

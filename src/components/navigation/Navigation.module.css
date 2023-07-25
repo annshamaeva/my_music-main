@@ -1,0 +1,19 @@
+.nav {
+  width: 244px;
+  background-color: var(--background-secondary);
+  padding: 20px 0 20px 36px;
+}
+
+.logo {
+  width: 113.33px;
+  height: 43px;
+  padding: 13px 0 13px 0;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 113.33px;
+  height: 17px;
+  color: #181818;
+}

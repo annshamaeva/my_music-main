@@ -1,0 +1,24 @@
+.menu {
+  display: block;
+  visibility: visible;
+}
+
+.list {
+  padding: 18px 0 10px 0;
+}
+
+.item {
+  padding: 5px 0;
+  margin-bottom: 16px;
+}
+
+.link {
+  color: var(--text-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.changeTheme {
+  cursor: pointer;
+}

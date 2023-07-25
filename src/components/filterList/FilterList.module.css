@@ -1,0 +1,12 @@
+.genre {
+  display: flex;
+  gap: 28px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  height: 232px;
+  overflow: auto;
+}

@@ -1,0 +1,81 @@
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 51px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 15px;
+}
+
+.button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid var(--text-primary);
+  border-radius: 60px;
+  padding: 6px 20px;
+  position: relative;
+}
+
+.button:hover {
+  border-color: var(--hover-primary);
+  color: var(--hover-primary);
+  cursor: pointer;
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.list {
+  width: 248px;
+  background: var(--background-secondary);
+  border-radius: 12px;
+  padding: 36px 34px;
+}
+
+.genre {
+  top: 48px;
+  position: absolute;
+  left: 0;
+}
+
+.performers {
+  top: 48px;
+  position: absolute;
+  left: 0;
+}
+
+.year {
+  top: 48px;
+  position: absolute;
+  left: 0;
+  width: 403px;
+  padding: 34px;
+}
+
+.active {
+  border-color: var(--active-primary);
+  color: var(--active-primary);
+  cursor: pointer;
+}
+
+.active:hover {
+  border-color: var(--active-primary);
+  color: var(--active-primary);
+  cursor: pointer;
+}

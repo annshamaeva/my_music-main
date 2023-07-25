@@ -1,0 +1,12 @@
+.item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  

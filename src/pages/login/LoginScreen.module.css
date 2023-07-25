@@ -1,0 +1,72 @@
+.container {
+  background: #262626;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 43px 44px 47px;
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 34px 0 60px;
+  width: 278px;
+}
+
+.input {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.003em;
+  border: none;
+  border-bottom: 1px solid #d0cece;
+  padding: 8px 0;
+}
+
+.input::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.003em;
+  color: #e1e1e1;
+}
+
+.button {
+  width: 278px;
+  height: 52px;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.003em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d0cece;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.enterButton {
+  composes: button;
+  background-color: #580ea2;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 21px;
+}
+
+.error {
+  color: red;
+  margin-top: -30px;
+  font-size: 12px;
+}
