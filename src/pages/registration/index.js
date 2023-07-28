@@ -38,7 +38,7 @@ export default function RegistrationScreen() {
       await signUp({
         username: login,
         password: pass,
-        email: mail,
+        email: 'hkjhdjhk',
       }).unwrap();
       navigate('/');
     } catch (error) {
