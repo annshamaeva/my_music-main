@@ -9,6 +9,7 @@ export default function RegistrationScreen() {
   const [login, setLogin] = useState('');
   const [pass, setPass] = useState('');
   const [repeatPass, setRepeatPass] = useState('');
+  const [mail] = useState('');
   const [loginEror, setLoginError] = useState('');
   const [passEror, setPassError] = useState('');
 
@@ -37,7 +38,7 @@ export default function RegistrationScreen() {
       await signUp({
         username: login,
         password: pass,
-        email: 'a1b2@gmail.com',
+        email: mail,
       }).unwrap();
       navigate('/');
     } catch (error) {
