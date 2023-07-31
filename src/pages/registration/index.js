@@ -77,13 +77,7 @@ export default function RegistrationScreen() {
             placeholder="Логин"
           />
           {loginEror && <div className={s.error}>{loginEror}</div>}
-          <input
-            value={email}
-            onChange={handleEmailChange}
-            className={s.input}
-            type="text"
-            placeholder="Email"
-          />
+          
           <input
             value={pass}
             onChange={handlePasswordChange}
