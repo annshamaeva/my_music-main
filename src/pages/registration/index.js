@@ -42,7 +42,7 @@ export default function RegistrationScreen() {
       await signUp({
         username: login,
         password: pass,
-      
+        email,
       }).unwrap();
       navigate('/');
     } catch (error) {
