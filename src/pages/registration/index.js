@@ -9,6 +9,7 @@ export default function RegistrationScreen() {
   const [login, setLogin] = useState('');
   const [pass, setPass] = useState('');
   const [repeatPass, setRepeatPass] = useState('');
+  const [email, setEmail] = useState('');
   const [loginEror, setLoginError] = useState('');
   const [passEror, setPassError] = useState('');
 
@@ -25,6 +26,10 @@ export default function RegistrationScreen() {
   const handleRepeatPasswordChange = (e) => {
     setRepeatPass(e.target.value);
   };
+ 
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  }
 
   const handleSignUp = async () => {
     if (pass !== repeatPass) {
@@ -37,7 +42,7 @@ export default function RegistrationScreen() {
       await signUp({
         username: login,
         password: pass,
-        email: 'a1b2@gmail.com',
+        email,
       }).unwrap();
       navigate('/');
     } catch (error) {
@@ -72,6 +77,13 @@ export default function RegistrationScreen() {
             placeholder="Логин"
           />
           {loginEror && <div className={s.error}>{loginEror}</div>}
+          <input
+            value={email}
+            onChange={handleEmailChange}
+            className={s.input}
+            type="text"
+            placeholder="Email"
+          />
           <input
             value={pass}
             onChange={handlePasswordChange}
